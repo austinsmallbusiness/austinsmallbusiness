@@ -1,0 +1,148 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site favicons & manifest icons
+# 9. Site navigation
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- screenshot.png
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- alembic-jekyll-theme.gemspec
+- .jekyll-cache
+
+# 2. Installed Gems
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jekyll-commonmark
+- jekyll-include-cache
+- jemoji
+
+# 3. Gem settings
+paginate: 10 # jekyll-paginate > items per page
+paginate_path: blog/page:num # jekyll-paginate > blog page
+jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+twitter:
+  username: AustinSmallBiz1 # jekyll-seo-tag > Owners twitter username
+author: Austin Small Business # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: Austin Small Business Blog # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    - https://twitter.com/AustinSmallBiz1
+    - https://instagram.com/austinsmallbusiness
+# markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
+# commonmark:
+  # options: ["SMART", "FOOTNOTES"]
+  # extensions: ["strikethrough", "autolink", "table"]
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: /:year/:month/:day/:title:output_ext  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: America/Chicago # Timezone for blog posts and alike
+
+# 5. Collections
+collections:
+  posts:
+    title: Austin Love # Needed for Siteleaf
+    output: true
+    description: "Giving credit to awesome small businesses in Austin, Texas" # The post list page content
+    feature_text: |
+      # Special Spots we LOVE in Austin, TX
+    feature_image: "https://res.cloudinary.com/atx/image/upload/v1560456957/austinsmallbusiness/austin-town-lake-skyline-web-brighter-LAB_xf86zg.jpg"
+
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "https://res.cloudinary.com/atx/image/upload/v1560449752/austinsmallbusiness/social-share_hsf2wy.png" # Default image for sharing
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+lang: en-US # Set the site language
+title: "Austin Small Business Blog" # Site name or title, also used in jekyll-seo-tag
+logo: "https://res.cloudinary.com/atx/image/upload/v1560449039/austinsmallbusiness/logo_uqpt7g.png" # Site logo, also used in jekyll-seo-tag
+description: "The City We Love, Businesses We Love To Support " # Site description and default description, also used in jekyll-seo-tag
+url: "https://austinsmallbusiness.blog" # Site url, also used in jekyll-seo-tag
+baseurl: ""
+repo: "https://github.com/austinsmallbusiness/austinsmallbusiness.github.io"
+email: "hello@austinsmallbusiness.blog"
+# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
+# google_analytics: ''
+# google_analytics_anonymize_ip: ''
+# service_worker: false # Will turn off the service worker if set to false
+css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+
+# 8. Site favicons & manifest icons
+favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+  32:  '/assets/logos/tex32.png'
+  64:  '/assets/logos/tex64.png'
+  100: '/assets/logos/tex100.png'
+  200: '/assets/logos/tex200.png'
+
+
+# 9. Site navigation
+navigation_header:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/ 
+  - title: Submit
+    url: /submit/
+  - title: About
+    url: /about/
+  - title: Biz Directory
+    url: /categories/
+  - title: Search
+    url: /search/
+
+navigation_footer:
+- title: Austin Small Business Blog
+  url: https://austinsmallbusiness.blog
+
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  Twitter: https://twitter.com/AustinSmallBiz1
+  Instagram: https://instagram.com/austinsmallbusiness
+  link: https://austinsmallbusiness.blog
+  RSS: /feed.xml
+
+sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
+  Twitter: "#0d94e7"
+  facebook: "#3B5998"
+  Email: true
