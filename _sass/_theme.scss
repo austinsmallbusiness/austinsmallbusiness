@@ -457,4 +457,11 @@ pre code {
 }
 .header .typeset h1 {
   color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 40px;
+}
+.feature {
+    height: 450px;
+    background-position: center 30%;
+    background-size: cover;
 }
