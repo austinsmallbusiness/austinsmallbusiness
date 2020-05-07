@@ -83,12 +83,12 @@ excerpt: "Now's the time for us to rally around and save the small businesses in
 </div>
 
 <script type="text/javascript">
-	var target = document.querySelector('.grid'); 
+	var target = document.querySelector('.grid');
 
 	function getLocalBusinesses() {
 		this.loading = true;
 		fetch(
-			`https://spreadsheets.google.com/feeds/list/13xNtkZI2A8tBCx_0Q2a3FKj02jg6YSbOZ8m6XQyML_o/od6/public/basic?alt=json`
+			`https://spreadsheets.google.com/feeds/list/13xNtkZI2A8tBCx_0Q2a3FKj02jg6YSbOZ8m6XQyML_o/od6/public/values?alt=json`
 		)
 	    .then((res) => res.json())
 	    .then((data) => {
@@ -109,7 +109,7 @@ excerpt: "Now's the time for us to rally around and save the small businesses in
 		var items = data.feed.entry;
 		console.log(data.feed.entry);
 		for (var i = 0; i <= items.length - 1; i++) {
-			
+
 			var this_title = items[i].title.$t;
 			var this_content = items[i].content.$t;
 
@@ -122,7 +122,7 @@ excerpt: "Now's the time for us to rally around and save the small businesses in
 
 			var smbDiv = document.createElement('div');
 
-			smbDiv.innerHTML = '<div class="smb-grid-view" data-category>' + 
+			smbDiv.innerHTML = '<div class="smb-grid-view" data-category>' +
 			  '   <span class="title">' +
 			  '     ' + this_content +
 			  '   </span>' +
@@ -140,7 +140,7 @@ excerpt: "Now's the time for us to rally around and save the small businesses in
 	}
 
 	getSMB();
-	
+
 </script>
 
 <script type="text/javascript">
@@ -178,7 +178,7 @@ excerpt: "Now's the time for us to rally around and save the small businesses in
 		  });
 		});
 	}
-	
+
 
 </script>
 <style type="text/css">
