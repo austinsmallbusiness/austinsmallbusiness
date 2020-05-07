@@ -1,0 +1,28 @@
+TODO
+
+Convert all spreadsheet entries into posts? 
+	-allows searchability
+	-improves SEO
+
+Build Directory
+	-add too posts from spreadsheet
+
+Grid view / Map View
+
+Masonry / Ionic
+
+
+
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSU38eG2bzpRMXpcO5-j3AEfWnsH6Zd3vaOhPqS70MEcVTGVeL3Fkib1U_v5zAQtm-YUxZeKHjhjjgO/pubhtml
+
+
+https://github.com/mholt/PapaParse/blob/master/papaparse.min.js
+https://github.com/metafizzy/isotope
+https://codepen.io/desandro/pen/Ehgij
+https://isotope.metafizzy.co/filtering.html
+
+https://docs.google.com/spreadsheets/d/13xNtkZI2A8tBCx_0Q2a3FKj02jg6YSbOZ8m6XQyML_o/edit#gid=0
+
+http://127.0.0.1:4000/covid-support/
+
+=ArrayFormula(""""&'AustinSmallBusiness.Blog MapAndGridViewList'!F2&"""")
