@@ -1,6 +1,7 @@
 ---
 title: About the Austin Small Business Blog
 indexing: true
+layout: page
 sitemap: true
 feature_text: |
   # Supporting Local Entrepreneurs, from Solo & Startups on up to Medium sized businesses. Show some local love.
